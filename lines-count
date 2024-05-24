@@ -1,0 +1,76 @@
+func CountLinesOfCodeGO(code string) int {
+	lines := strings.Split(code, "\n")
+	count := 0
+	for _, line := range lines {
+		trimmedLine := strings.TrimSpace(line)
+		if len(trimmedLine) > 0 && !strings.HasPrefix(trimmedLine, "//") && !strings.HasPrefix(trimmedLine, "/*") {
+			count++
+		}
+	}
+	return count
+}
+
+
+func CountLinesOfCodeJS(code string) int {
+	lines := strings.Split(code, "\n")
+	count := 0
+	for _, line := range lines {
+		trimmedLine := strings.TrimSpace(line)
+		if len(trimmedLine) > 0 && !strings.HasPrefix(trimmedLine, "//") && !strings.HasPrefix(trimmedLine, "/*") {
+			count++
+		}
+	}
+	return count
+}
+
+
+func CountLinesOfCodeMove(code string) int {
+	lines := strings.Split(code, "\n")
+	count := 0
+	for _, line := range lines {
+		trimmedLine := strings.TrimSpace(line)
+		if len(trimmedLine) > 0 && !strings.HasPrefix(trimmedLine, "//") {
+			count++
+		}
+	}
+	return count
+}
+
+func CountLinesOfCodePython(code string) int {
+	lines := strings.Split(code, "\n")
+	count := 0
+	for _, line := range lines {
+		trimmedLine := strings.TrimSpace(line)
+		if len(trimmedLine) > 0 && !strings.HasPrefix(trimmedLine, "#") {
+			count++
+		}
+	}
+	return count
+}
+
+func CountLinesOfCodeRust(code string) int {
+	lines := strings.Split(code, "\n")
+	count := 0
+	for _, line := range lines {
+		trimmedLine := strings.TrimSpace(line)
+		if len(trimmedLine) > 0 && !strings.HasPrefix(trimmedLine, "//") && !strings.HasPrefix(trimmedLine, "/*") {
+			count++
+		}
+	}
+	return count
+}
+
+func CountLinesOfCodeSolidity(code string) int {
+	lines := strings.Split(code, "\n")
+	count := 0
+	for _, line := range lines {
+		trimmedLine := strings.TrimSpace(line)
+		if len(trimmedLine) > 0 && !strings.HasPrefix(trimmedLine, "//") && !strings.HasPrefix(trimmedLine, "/*") {
+			count++
+		}
+	}
+	return count
+}
+
+
+
